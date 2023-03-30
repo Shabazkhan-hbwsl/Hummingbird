@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Hummingbird_Mod9::custom_menu" title="Custom Menu" module="Hummingbird_Mod9" resource="Mod9_Tab::tab_config"  sortOrder="100"/>
+        <add id="Hummingbird_Mod9::custom_config" title="Configuration" translate="title" module="Hummingbird_Mod9" parent="Hummingbird_Mod9::custom_menu"  
+        sortOrder="10"  resource="Mod9_Tab::tab_config_link" dependsOnModule="Hummingbird_Mod9" action="admin/system_config/edit/section/tab9_id"/>
+    </menu>
+</config>
